@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  6 JUL 2020 23:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  7 JUL 2020 18:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -103,7 +103,7 @@ File: Images/topviewtestset0.png Graphic file (type png)
 <use Images/topviewtestset0.png>
 Package pdftex.def Info: Images/topviewtestset0.png  used on input line 47.
 (pdftex.def)             Requested size: 578.16447pt x 325.21751pt.
- [2] [3 </Users/shad0w7/Documents/GitHub/LiDARVISION/journal/Images/topviewtestsfrontview0.png>] [4 </Users/shad0w7/Documents/GitHub/LiDARVISION/journal/Images/topviewtestset0.png>] [5] [6] (/Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.aux) ) 
+ [2] [3 </Users/shad0w7/Documents/GitHub/LiDARVISION/journal/Images/topviewtestsfrontview0.png>] [4 </Users/shad0w7/Documents/GitHub/LiDARVISION/journal/Images/topviewtestset0.png>] [5] [6] [7] (/Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.aux) ) 
 Here is how much of TeX's memory you used:
  1177 strings out of 480608
  17971 string characters out of 5903631
@@ -113,10 +113,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  30i,8n,25p,1118b,213s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on /Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.pdf (6 pages, 1201979 bytes).
+Output written on /Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.pdf (7 pages, 1205814 bytes).
 PDF statistics:
- 65 PDF objects out of 1000 (max. 8388607)
- 43 compressed objects within 1 object stream
+ 70 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

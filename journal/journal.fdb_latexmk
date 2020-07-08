@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1594102944 "/Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.tex" "/Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.pdf" "journal" 1594102950
-  "/Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.aux" 1594102949 1251 f2532909503aeaef0f6d633bc3ec7efe ""
-  "/Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.tex" 1594102942 7269 22f5e4bcb1926769e862fde0b318c080 ""
+["pdflatex"] 1594173082 "/Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.tex" "/Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.pdf" "journal" 1594173086
+  "/Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.aux" 1594173086 1345 fddd041f5e0340d800a1ce2e28e6e8a8 ""
+  "/Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.tex" 1594173081 10425 ce3c7016c933f11c95f88394e37055d7 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1000.tfm" 1136768653 1536 e07581a4bb3136ece9eeb4c3ffab8233 ""
@@ -46,11 +46,11 @@
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
   "Images/topviewtestset0.png" 1594070158 608095 3829282f5858ff3486ac1089f3bc6d17 ""
   "Images/topviewtestsfrontview0.png" 1594070158 1456591 dafea2e53c022ab7d23bce77dd3fed8b ""
-  "journal.aux" 1594102949 1251 f2532909503aeaef0f6d633bc3ec7efe "pdflatex"
-  "journal.tex" 1594102942 7269 22f5e4bcb1926769e862fde0b318c080 ""
+  "journal.aux" 1594173086 1345 fddd041f5e0340d800a1ce2e28e6e8a8 "pdflatex"
+  "journal.tex" 1594173081 10425 ce3c7016c933f11c95f88394e37055d7 ""
   (generated)
   "journal.aux"
-  "journal.pdf"
   "/Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.log"
+  "journal.pdf"
   "journal.log"
   "/Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.pdf"

@@ -111,6 +111,37 @@ Audio System -\$30
 
 For the LiDAR and Image sensing, I hate this, but honestly dual cameras + LiDAR is probably decent, most likely LiDAR is not needed, but it would be a nice to have in for faster processing. OPENCV could be run as a main process, with LiDAR scanners able to augment for a 15-20FPS experience. 
 
-Another 
+\section{July 7th}
+
+Possibly use the YOLOv3 or Detecteron2 framework, on either a Coral or Jetson system. With either, 10-15FPS frames will be possible. First, the AI will just train for moving objects, as well as obstacles in the direct LiDAR Path. Training Detecteron2 will probably need many many test images, but this is the need. 
+
+The second step of training, is distance. There are probably many good libraries on this, but LiDAR combined images would give good distance measurements, and fast detection times. Either way, image detection with distance as well as object classification would be a good idea. The bounding box fill style should also display distance measurements under each classified object. Dual side cameras for peripheral wide angle footage could also be used, as well as a depth camera setup for the primary sensor, definitely check Depth Camera performance versus LiDAR, as well as cost that will definitely be lower than \$100 for a LiDAR system. 
+
+The first step of the road map would be to start with training data from cars and moving down hallways and sidewalks with cameras, played back as a video. Then later, instant feed into the webcam shows then feed analyzed later for clarity and function. Drone feed would be good for this. 
+
+Moving on, there should be an instant readout of distances and playback that can be viewed in real time. This will open a transition into Part 2.
+
+Looking at the table, most of basic can be easily accessed through Detecteron2 or YOLOv3 basic libraries, while Stage 2 can probably be found in public weighted sets. Stage 3 will most likely have to be trained by hand, and 4 will require advanced decision making skills, to be able to successfully tabulate results. 
+
+
+\begin{tabular}{ |p{1.7cm}|p{2.8cm}|p{2.8cm}|p{2.5cm}|  }
+    \hline
+    \multicolumn{4}{|c|}{Tiers for Image Classification} \\
+    \hline
+    Basic & Stage 2 & Stage 3 & Advanced\\
+    \hline
+    Cars            & Wall              & GC ALL            & Path Tracing\\
+    Bikes           & Corner/Lane       & Stationary FULL   & \\
+    Humans          & Ground Changes    &                   & \\
+    Animals         & Hydrant/Similar   &                   & \\
+                    & Fluid             &                   & \\
+
+    \hline
+\end{tabular}
+
+
+    As of July 7th, my new (eBay so technically not "new") mouse for my desktop is still in transit, and I cannot access a GPU to train models (technically just the keyboard, but that could get tiring quickly), I will just execute them at low FPS on a laptop, and just the basic Detecteron2 libraries in a docker container with online analytics to test basic images that may be used. I will also take video and take the output of that. Resolution should be around 720-1080p for the AI to balance power consumption and Resolution, although technically with too low of a resolution, performance could be impacted negatively with false negatives and positives due to a lack of precision, due to testData limitations. The online YOLOv3 mini edition on a Jetson nano, seem to work fairly well, and deliver crisp video with good frames (15) along various parallel pipelines.
+
+
 
 \end{document}
