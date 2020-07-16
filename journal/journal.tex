@@ -38,13 +38,13 @@ First, in order to detect whats going on, 3D and 2D classification will be used,
 
 A diagram of the different classification and warning sites can be shown below.
 \begin{figure}[htbp]
-    \centerline{\includegraphics[scale=0.3]{Images/topviewtestsfrontview0.png}}
+    \centerline{\includegraphics[scale=0.1]{Images/topviewtestsfrontview0.png}}
     \caption{This is a front view of classification space. At a basic level, things are classified as Humans, Cars, Stationary Objects, and Moving Objects. Different stages of warning are given.}
     \label{fig1}
 \end{figure}
 
 \begin{figure}[htbp]
-    \centerline{\includegraphics[scale=0.3]{Images/topviewtestset0.png}}
+    \centerline{\includegraphics[scale=0.1]{Images/topviewtestset0.png}}
     \caption{This is a top view of classification space. At a basic level, things are classified as Humans, Cars, Stationary Objects, and Moving Objects. Different stages of warning are given, and here one can see why LiDAR is needed, as even for humans, it is very tricky to tell the distance of objects from the top perspective picture without labels}
     \label{fig2}
 \end{figure}
@@ -142,6 +142,43 @@ Looking at the table, most of basic can be easily accessed through Detecteron2 o
 
     As of July 7th, my new (eBay so technically not "new") mouse for my desktop is still in transit, and I cannot access a GPU to train models (technically just the keyboard, but that could get tiring quickly), I will just execute them at low FPS on a laptop, and just the basic Detecteron2 libraries in a docker container with online analytics to test basic images that may be used. I will also take video and take the output of that. Resolution should be around 720-1080p for the AI to balance power consumption and Resolution, although technically with too low of a resolution, performance could be impacted negatively with false negatives and positives due to a lack of precision, due to testData limitations. The online YOLOv3 mini edition on a Jetson nano, seem to work fairly well, and deliver crisp video with good frames (15) along various parallel pipelines.
 
+\section{July 8th}
 
+Today I did some testing on the YOLOv3 framework (Keep in mind YOLOv4 is out, and this would most likely be the production AI Engine, I was just doing preliminary testing on a secondary machine). Starting off, the obvious flaws of the system are obvious. Without perfect images, and the ones taken were mostly high definition stock footage, not the shaky out of focus footage that would most likely be coming out of cameras, although I would definitely like to have 120-240 FPS cameras, even if only every 20th frame was being used, just for clearer frames. (From various authors all used under fair use)
+
+Firstly, most traditional AI engines, aren't trained to recognize the stuff I would need them to recognize, primarily obstacles, buildings, walls, poles, changes in the ground, and whatnot, as well as a second problem of not being able to discern distance. The first problem is fairly easy to fix, as once a graphics card is in use, (Which means I cannot train the AI unless I use Google Colabatory...) I can just train it to detect these specific objects and create these gains. It really isn't that hard. Looking through the test images however, there is a slight problem with low end performance.
+
+\textit{All of these were run on a MacBook Pro 13 2012 Intel Core i5 2.5ghz 3210M "Ivy Bridge", on an inadequate thermal platform, however observation through Intel Power Gadget, will show that the Computer did heat up or throttle, so thermal limitations can be ignored, due to burst nature of execution.}
+Also, since I do not really have a dev environment or even docker installed on this computer, I can only run the basic YOLOv3 weights, and in testing a YOLOv3-tiny.
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics[scale=0.3]{Images/PredS1.png}}
+    \caption{Basic overview of street, runtime: approx 29 seconds}
+    \label{fig3}
+\end{figure}
+
+This first figure looks fine, and indeed, with basic weights, what we expect is outlined, although notable items like height changes, curbs, poles and whatnot are not outlined, everything else is decently well done. However, the runtime is still pretty staggering, so I tried the fast running YOLOv3-nano architecture. \textit{(Keep in mind v3 is from 2018 and is deprecated now as v4 was just released, but I already have these images and I'm just trying to make a point.)}
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics[scale=0.5]{Images/Term2.png}}
+    \caption{Same test image, runtime 0.9s}
+    \label{fig4}
+\end{figure}
+
+This is more promising, the runtime is still around 1FPS but this is like Intel from 2012, according to the people that make the software, GPU's are also much faster. The unfortunate truth is, that the output isn't promising like at all.
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics[scale=0.3]{Images/PredS4.png}}
+    \caption{Not great detection.}
+    \label{fig5}
+\end{figure}
+
+This is really not usable. However, back to 500x better, on a Jetson Nano, the GPU based workstation chip that I want to use, 15FPS is to be expected from the YOLOv3-nano, while 5FPS is with the full weights. Its only imperative that even less FPS would be gleaned from a trained model.
+
+Hopefully Detecteron2 has better performance, and I will test this tomorrow on the same machine.
+
+\textit{NOTE: My logic is that if it works better on an ancient (described as obsolete by Apple) no GPU hardware, it should work better on newer shinier hardware, so if Detecteron works faster on the same set of test images than YOLOv3, it should also work better on Jetson, as both use CUDA.}
+
+\section{June 9th}
 
 \end{document}

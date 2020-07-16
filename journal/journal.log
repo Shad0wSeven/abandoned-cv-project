@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  7 JUL 2020 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.7)  8 JUL 2020 18:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -97,26 +97,42 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 File: Images/topviewtestsfrontview0.png Graphic file (type png)
 <use Images/topviewtestsfrontview0.png>
 Package pdftex.def Info: Images/topviewtestsfrontview0.png  used on input line 41.
-(pdftex.def)             Requested size: 578.16447pt x 325.21751pt.
+(pdftex.def)             Requested size: 192.7313pt x 108.41135pt.
 <Images/topviewtestset0.png, id=13, 1927.2pt x 1084.05pt>
 File: Images/topviewtestset0.png Graphic file (type png)
 <use Images/topviewtestset0.png>
 Package pdftex.def Info: Images/topviewtestset0.png  used on input line 47.
-(pdftex.def)             Requested size: 578.16447pt x 325.21751pt.
- [2] [3 </Users/shad0w7/Documents/GitHub/LiDARVISION/journal/Images/topviewtestsfrontview0.png>] [4 </Users/shad0w7/Documents/GitHub/LiDARVISION/journal/Images/topviewtestset0.png>] [5] [6] [7] (/Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.aux) ) 
+(pdftex.def)             Requested size: 192.7313pt x 108.41135pt.
+ [2] [3 </Users/shad0w7/Documents/GitHub/LiDARVISION/journal/Images/topviewtestsfrontview0.png> </Users/shad0w7/Documents/GitHub/LiDARVISION/journal/Images/topviewtestset0.png>] [4] [5] [6]
+<Images/PredS1.png, id=36, 1336.995pt x 853.1875pt>
+File: Images/PredS1.png Graphic file (type png)
+<use Images/PredS1.png>
+Package pdftex.def Info: Images/PredS1.png  used on input line 155.
+(pdftex.def)             Requested size: 401.1016pt x 255.95822pt.
+<Images/Term2.png, id=37, 684.5575pt x 479.7925pt>
+File: Images/Term2.png Graphic file (type png)
+<use Images/Term2.png>
+Package pdftex.def Info: Images/Term2.png  used on input line 163.
+(pdftex.def)             Requested size: 342.27791pt x 239.89565pt.
+<Images/PredS4.png, id=38, 1336.995pt x 853.1875pt>
+File: Images/PredS4.png Graphic file (type png)
+<use Images/PredS4.png>
+Package pdftex.def Info: Images/PredS4.png  used on input line 171.
+(pdftex.def)             Requested size: 401.1016pt x 255.95822pt.
+ [7 </Users/shad0w7/Documents/GitHub/LiDARVISION/journal/Images/PredS1.png>] [8 </Users/shad0w7/Documents/GitHub/LiDARVISION/journal/Images/Term2.png>] [9 </Users/shad0w7/Documents/GitHub/LiDARVISION/journal/Images/PredS4.png>] (/Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.aux) ) 
 Here is how much of TeX's memory you used:
- 1177 strings out of 480608
- 17971 string characters out of 5903631
- 260310 words of memory out of 5000000
- 17099 multiletter control sequences out of 15000+600000
- 537228 words of font info for 40 fonts, out of 8000000 for 9000
+ 1200 strings out of 480608
+ 18346 string characters out of 5903631
+ 260334 words of memory out of 5000000
+ 17118 multiletter control sequences out of 15000+600000
+ 537574 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,8n,25p,1118b,213s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on /Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.pdf (7 pages, 1205814 bytes).
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on /Users/shad0w7/Documents/GitHub/LiDARVISION/journal/journal.pdf (9 pages, 5731003 bytes).
 PDF statistics:
- 70 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 86 PDF objects out of 1000 (max. 8388607)
+ 54 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 
