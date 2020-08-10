@@ -2,14 +2,14 @@
 \usepackage{graphicx}
 \begin{document}
 
-\title{JOURNAL FOR LiDAR-VISION}
+\title{JOURNAL FOR STEREO/LiDAR-VISION}
 \author{Ayush Nayak}
 \date{\today}
 
 \maketitle
 
 \begin{abstract}
-    This is just the daily journal of my musings with this project, and where it will go. hanks!
+    This is just the daily journal of my musings with this project, and where it will go. Thanks!
 \end{abstract}
 
 \newpage
@@ -37,6 +37,7 @@ First, in order to detect whats going on, 3D and 2D classification will be used,
 - I will have to build a camera detection system that can detect basically any object, using open source datasets, and then verify that object with the LiDAR Sensor, which may be more optional, although is more for distance than actual image classification. 
 
 A diagram of the different classification and warning sites can be shown below.
+
 \begin{figure}[htbp]
     \centerline{\includegraphics[scale=0.1]{Images/topviewtestsfrontview0.png}}
     \caption{This is a front view of classification space. At a basic level, things are classified as Humans, Cars, Stationary Objects, and Moving Objects. Different stages of warning are given.}
@@ -179,6 +180,36 @@ Hopefully Detecteron2 has better performance, and I will test this tomorrow on t
 
 \textit{NOTE: My logic is that if it works better on an ancient (described as obsolete by Apple) no GPU hardware, it should work better on newer shinier hardware, so if Detecteron works faster on the same set of test images than YOLOv3, it should also work better on Jetson, as both use CUDA.}
 
-\section{June 9th}
+\section{July 12th}
+
+Yay! my new mouse is here. I immediately started testing the Detecteron2 dataset ... which I couldn't get to work. I tried pretty hard but it didn't work through google colab, will try on machine or docker tomorrow.
+
+\section{July 13th}
+
+
+Haven't checked whether or not detecteron2 will work yet, although I was looking through the COCO and KITTI databases for information about what they could detect. COCO seems to have most of the needed obstacles, and the added bonus that it's really easy to train a model with COCO. Wall and path detection are the \#1 priority. In the beginning I want to get it to the point where it can notice where the sidewalk borders are, as well as kind of realize distance. The first tier stuff is all in Detecteron2 by standard, and I want to upgrade it to wall detection and additional stuff like that.
+
+First of all, get detecteron2 working, then train in some coco stuff, bicycles and hydrants, then tomorrow start sidewalk stuff.
+
+Today I managed to train the Detecteron2 too recognize balloons, as well as all the other objects, and also did image segmentation with the default weights. This was amazing, and it proved that it worked, although it was over google colab. The notebook is here, although its basically identical to the google notebook from the Detecteron2 team, so I won't link it. I will try to use custom datasets and whatnot. Anyways, that was a success, tomorrow I will try to use Detecteron2 to use custom datasets.
+
+
+\section{July 16th}
+
+Today, I researched a lot about stereo cameras and the output that could be created through them. Two calibrated stereo cameras along with OpenCV could create very nice distance measurements for targets, and using a combined image of these stereo detection with image segmentation, could create a good workflow for image detection and staging.
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics[scale=0.1]{Images/WorkflowJul16.png}}
+    \caption{Workflow}
+    \label{fig6}
+\end{figure}
+
+Most simply, first of all, the combined (Intersect not Union otherwise distance mapping would not be possible) Felid of View of the cameras is taken, and the compiled image passed into Detecteron2 for image segmentation, and identification. OpenCV triangulation is the distance measurement, better than LiDAR for these types of tasks, the segmentation classes and image are sent to it, so it can compare the location of each point and calculate the relative distance, which is then appended to each segmentation classes' attributes. This final image is then passed out to the output. Since OpenCV Distance Triangulation is relatively resource light, the runtime will most likely depend on Detecteron2 performance. This method is relatively robust, as all it requires is a stereo camera setup, and due to almost plug and play integration once set up with OpenCV, the distance measurements are set in stone, and the only thing remaining is image dataset training.
+
+\section{August 5th}
+
+Today, I want to start researching the cameras to get, so I can start too figure out how to link them up, and to figure out mathematically what their distance is. The webcams I would start using would be wyze cams, and I would figure out a way too hook them up via USB and read their output to my computer.
+
+
 
 \end{document}
